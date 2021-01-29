@@ -11,9 +11,9 @@ function MainHeader() {
                 </div>
                 <div className="content__wrapper-item is-desktop">
                     <nav className="menu__frame">
-                        <a href="/" className="menu__frame-link is-animated" data-target="about">О нас</a>
-                        <a href="/" className="menu__frame-link is-animated" data-target="contact">Условия</a>
-                        <a href="/faqpage" className="menu__frame-link is-animated" data-target="team">Частые вопросы</a>
+                        <Link to="/" className="menu__frame-link is-animated" data-target="about">О нас</Link>
+                        <Link to="/" className="menu__frame-link is-animated" data-target="contact">Условия</Link>
+                        <Link to="/faqpage" className="menu__frame-link is-animated" data-target="team">Частые вопросы</Link>
                     </nav>
                 </div>
                 <div className="content__wrapper-item is-desktop">
