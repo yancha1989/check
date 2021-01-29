@@ -1,26 +1,11 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
-import AboutPage from "./AboutPage/AboutPage.js";
-import FagPage from "./FagPage/FagPage.js"
-import Registration from "./Registration/Registration.js"
-import MainHeader from './MainHeader/MainHeader'
-
-import './App.css'
+import ReactDOM from "react-dom";
+import {BrowserRouter} from 'react-router-dom';
+import App from "./components/App"
 
 
-
-function App() {
-    
-        return (
-           <div className='App'>  
-                <Switch>
-                   <Route path='/aboutpage' component={ AboutPage } />
-                    <Route path='/faqpage' component={ FagPage } />
-                    <Redirect from='/' to='/aboutpage'/>
-                </Switch>
-            </div> 
-        )
-    
-    }
-
-export default App;
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+document.getElementById("root"));
