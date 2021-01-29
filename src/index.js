@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
 import { Link, BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom';
+import App from "./components/App";
+import './index.css'
 
-import App from "./components/App"
-
-ReactDom.render (
+ReactDOM.render (
     <Router>
         <App />
-    </Router>,
-    document.getElementById("root"));
+    </Router>
+    , document.getElementById("root"));
