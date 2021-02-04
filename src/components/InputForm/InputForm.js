@@ -16,6 +16,7 @@ class InputForm extends React.Component {
     this.onLicenceNumChange = this.onLicenceNumChange.bind(this);
     this.onLicenceDateChange = this.onLicenceDateChange.bind(this);
     };
+    this.onNextFormClick = this.onNextFormClick.bind(this);
 
 
     onNameChange (e) {
@@ -60,15 +61,9 @@ class InputForm extends React.Component {
     onLicenceDateChange (e) {
       this.setState({licenceDate: e.target.value});
     };
+
     
-    
-    
-    
-    
-    
-    
-    
-    nextForm (e) {
+    onNextFormClick (e) {
       e.preventDefault()
       console.log (this.state);
       alert('Wait');
@@ -142,7 +137,7 @@ class InputForm extends React.Component {
                   </div>
                 </div>
               <div className="continue">
-                <button onClick={this.nextForm.bind(this)}>Продолжить</button>
+                <button onClick={this.onNextFormClick}>Продолжить</button>
               </div>
             </form>
           </>
